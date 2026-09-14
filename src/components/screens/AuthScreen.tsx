@@ -15,12 +15,6 @@ export const AuthScreen: React.FC = () => {
     setCurrentScreen('home');
   };
 
-  const handleDemoFill = () => {
-    setName('Alex Chen');
-    setEmail('alex.chen@university.edu');
-    setCurrentScreen('home');
-  };
-
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4 sm:p-6">
       <div className="max-w-md w-full bg-white rounded-3xl shadow-card border border-slate-200/80 p-6 sm:p-8">
@@ -117,25 +111,17 @@ export const AuthScreen: React.FC = () => {
           </button>
         </form>
 
-        {/* Demo Fast Track */}
-        <div className="mt-6 pt-6 border-t border-slate-100">
+        <div className="mt-6 pt-5 border-t border-slate-100 text-center space-y-2">
           <button
             type="button"
-            onClick={handleDemoFill}
-            className="w-full py-2.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-xs border border-indigo-200/80 transition flex items-center justify-center gap-1.5"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
-            <span>1-Click Project Demo Access (Alex Chen)</span>
-          </button>
-        </div>
-
-        <div className="mt-4 text-center">
-          <button
             onClick={() => setCurrentScreen('onboarding')}
-            className="text-[11px] text-slate-400 hover:text-indigo-600 font-medium"
+            className="text-xs text-indigo-600 hover:text-indigo-800 font-bold block mx-auto"
           >
-            Want to re-run Design Thinking Onboarding? Click here
+            New Student? Take the Design Thinking Onboarding Tour →
           </button>
+          <p className="text-[11px] text-slate-400">
+            Secure client-side study workspace • Privacy preserved
+          </p>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ export const ProfileScreen: React.FC = () => {
     updateProfile,
     deviceMode,
     setDeviceMode,
-    resetDemoData,
+    resetAppData,
     studyPlan,
     setIsDesignThinkingModalOpen
   } = useApp();
@@ -74,7 +74,7 @@ export const ProfileScreen: React.FC = () => {
           </div>
           <h1 className="text-2xl font-black text-slate-900">Profile & Settings</h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
-            Manage your academic targets, study preferences, and demonstration modes.
+            Manage your academic targets, study preferences, and presentation modes.
           </p>
         </div>
 
@@ -190,7 +190,7 @@ export const ProfileScreen: React.FC = () => {
           </form>
         </div>
 
-        {/* Right 1 Col: Notification Settings & Demo Tools */}
+        {/* Right 1 Col: Notification Settings & Data Tools */}
         <div className="space-y-6">
           {/* Presentation Device Mode */}
           <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-soft space-y-3">
@@ -267,9 +267,9 @@ export const ProfileScreen: React.FC = () => {
             </div>
           </div>
 
-          {/* Export & Reset Demo */}
+          {/* Export & Reset Data */}
           <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-soft space-y-3">
-            <h3 className="font-extrabold text-slate-900 text-sm">Demo & Data Management</h3>
+            <h3 className="font-extrabold text-slate-900 text-sm">Account & Data Management</h3>
 
             <button
               onClick={exportSchedule}
@@ -280,11 +280,11 @@ export const ProfileScreen: React.FC = () => {
             </button>
 
             <button
-              onClick={resetDemoData}
+              onClick={resetAppData}
               className="w-full py-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-xs border border-rose-200/80 flex items-center justify-center gap-2 transition"
             >
               <RotateCcw className="w-3.5 h-3.5" />
-              <span>Reset to Clean Student Data</span>
+              <span>Reset Application Data</span>
             </button>
           </div>
         </div>

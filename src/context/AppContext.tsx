@@ -67,7 +67,7 @@ interface AppContextType {
   setIsDesignThinkingModalOpen: (open: boolean) => void;
   isNotificationDrawerOpen: boolean;
   setIsNotificationDrawerOpen: (open: boolean) => void;
-  resetDemoData: () => void;
+  resetAppData: () => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -357,8 +357,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     .filter(s => s.mode === 'focus' && s.timestamp.startsWith(todayStr))
     .reduce((acc, curr) => acc + curr.durationMinutes, 0);
 
-  // Reset Demo Data
-  const resetDemoData = () => {
+  // Reset Application Data
+  const resetAppData = () => {
     setProfile(initialProfile);
     setTasks(initialTasks);
     setStudyPlan(initialStudyPlan);
@@ -403,7 +403,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         setIsDesignThinkingModalOpen,
         isNotificationDrawerOpen,
         setIsNotificationDrawerOpen,
-        resetDemoData
+        resetAppData
       }}
     >
       {children}

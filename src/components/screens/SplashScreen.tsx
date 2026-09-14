@@ -82,18 +82,18 @@ export const SplashScreen: React.FC = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <button
-            onClick={() => setCurrentScreen('home')}
+            onClick={() => setCurrentScreen('onboarding')}
             className="w-full sm:w-auto px-7 py-3.5 rounded-2xl gradient-brand text-white font-bold text-sm shadow-xl shadow-indigo-600/40 hover:brightness-110 active:scale-95 transition flex items-center justify-center gap-2"
           >
-            <span>Launch Demo as Alex Chen</span>
+            <span>Get Started Now</span>
             <ArrowRight className="w-4 h-4" />
           </button>
 
           <button
-            onClick={() => setCurrentScreen('onboarding')}
+            onClick={() => setCurrentScreen('login')}
             className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/15 transition flex items-center justify-center gap-2"
           >
-            <span>Design Thinking Onboarding</span>
+            <span>Student Sign In</span>
           </button>
         </div>
       </div>

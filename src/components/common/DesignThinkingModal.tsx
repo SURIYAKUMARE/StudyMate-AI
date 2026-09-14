@@ -234,7 +234,7 @@ export const DesignThinkingModal: React.FC = () => {
               </div>
 
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
-                <div className="text-xs font-bold text-slate-800">Key Demonstration Outcomes:</div>
+                <div className="text-xs font-bold text-slate-800">Key Academic Impact Metrics:</div>
                 <div className="grid sm:grid-cols-3 gap-2 text-center">
                   <div className="p-3 bg-white rounded-xl border">
                     <div className="text-lg font-extrabold text-indigo-600">-42%</div>
@@ -257,7 +257,7 @@ export const DesignThinkingModal: React.FC = () => {
         {/* Footer */}
         <div className="p-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
           <span className="text-[11px] text-slate-500">
-            StudyMate AI • College Project Demonstration
+            StudyMate AI • Design Thinking Academic Platform
           </span>
           <button
             onClick={() => setIsDesignThinkingModalOpen(false)}
